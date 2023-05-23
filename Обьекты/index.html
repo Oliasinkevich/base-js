@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+        // Workshop
+        
+        // 1 задание
+
+        // Создайте объект с ключами от 1 до 7, в качестве значений содержащий имена дней недели.Выведите на экран “Вторник”
+
+        // const weekDay = {
+        //     1: 'Понедельник',
+        //     2: 'Вторник',
+        //     3: 'Среда',
+        //     4: 'Четверг,',
+        //     5: 'Пятница',
+        //     6: 'Суббота',
+        //     7: 'Воскресенье',
+        // };
+
+        // console.log(weekDay[2]);
+
+        // Создайте объект user с ключами 'name', 'surname', ‘age’. Выведите на экран фамилию, имя и возраст через дефис.
+
+        // const user = {
+        //     name: 'Ivan',
+        //     surname: 'Ivanov',
+        //     age: 21,
+        // }
+
+        // console.log(`${user.name} - ${user.surname} - ${user.age}`);
+
+
+        // Добавьте в объект user свойство отчество, которое пользователь должен ввести с клавиатуры
+        // Удалите свойство surname
+
+
+        // user.info = prompt('Введите отчество');
+        // delete user.surname;
+        // console.log(user);
+
+
+        // 2 Задание
+
+        // Даны два массива: первый с названиями дней недели, а второй - с их порядковыми номерами:
+        // const arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+        // const arr2 = [1, 2, 3, 4, 5, 6, 7];
+        // С помощью цикла создайте объект, ключами которого будут названия дней, а значениями - их номера (или наоборот)
+
+        // const arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+        // const arr2 = [1, 2, 3, 4, 5, 6, 7];
+
+        // let numDay = {};
+        // for (let i = 0; i < arr1.length; i++) {
+        //     numDay[arr2[i]] = arr1[i];
+        // }
+
+        // console.log(numDay);
+
+        // const obj = {x: 1, y: 2, z: 3};
+        // Переберите этот объект циклом и возведите каждый элемент этого объекта в квадрат.
+
+        // const obj = { x: 1, y: 2, z: 3 };
+
+        // for (const key in obj) {
+        //     obj[key] **= 2
+        // }
+        // console.log(obj);
+
+
+        // 3 Задание
+
+        // Найдите сумму элементов привиденного обьекта
+
+        // const obj = {
+        //     key1: {
+        //         key1: 1,
+        //         key2: 2,
+        //         key3: 3,
+        //     },
+        //     key2: {
+        //         key1: 4,
+        //         key2: 5,
+        //         key3: 6,
+        //     },
+        //     key3: {
+        //         key1: 7,
+        //         key2: 8,
+        //         key3: 9,
+        //     },
+        // }
+
+        // let totalSum = 0;
+
+        // for (const key in obj) {
+        //     for (const key2 in obj[key]) {
+        //         totalSum = totalSum + obj[key][key2];
+        //     }
+        // }
+
+
+        // console.log(totalSum);
+
+        // 4 Задание
+
+        //         Создайте объект riddles 
+        // Добавьте свойства question, answer
+        // создайте метод askQuestion который задает вопрос question и сравнивает ответ с answer
+        // Если ответил неверно, то в консоль выводится текст: “вы проиграли”
+
+
+        // const riddle = {
+        //     question: 'Зимой и летом одним цветом',
+        //     answer: 'елка',
+        //     askQuestion() {
+        //         let puzzle = prompt(this.question)
+        //         if (this.answer === puzzle) {
+        //             console.log('Вы выиграли');
+        //         } else {
+        //             console.log('Вы проиграли');
+        //         }
+        //     }
+
+        // }
+        // riddle.askQuestion();
+
+        // HOMEWORK
+
+        // Задание 1
+        // Дан объект numbers. Необходимо в консоль вывести все значения больше или равные 3.
+
+        // const numbers = {
+        //     keyin1: 1,
+        //     keyin2: 2,
+        //     keyin3: 3,
+        //     keyin4: 4,
+        //     keyin5: 5,
+        //     keyin6: 6,
+        //     keyin7: 7,
+        // }
+
+        // for (const key in numbers) {
+        //     if (numbers[key] >= 3) {
+        //         console.log(numbers[key]);
+        //     }
+        // }
+
+        // Задание 2
+        // Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в консоль.
+
+        //     key3: {
+        //         key1: 7,
+        //         key2: 8,
+        //         key3: 9,
+        //     },
+        // }
+
+        // let totalSum = 0;
+
+        // for (const key in obj) {
+        //     for (const key2 in obj[key]) {
+        //         totalSum = totalSum + obj[key][key2];
+
+        // const post = {
+        //     author: "John", // вывести этот текст
+        //     postId: 23,
+        //     comments: [
+        //         {
+        //             userId: 10,
+        //             userName: "Alex",
+        //             text: "lorem ipsum",
+        //             rating: {
+        //                 likes: 10,
+        //                 dislikes: 2, // вывести это число
+        //             },
+        //         },
+        //         {
+        //             userId: 5, // вывести это число
+        //             userName: "Jane",
+        //             text: "lorem ipsum 2", // вывести этот текст
+        //             rating: {
+        //                 likes: 3,
+        //                 dislikes: 1,
+        //             },
+        //         },
+        //     ],
+        // };
+
+        // let firstValue;
+        // for (const key in post) {
+        //     firstValue = post[key];
+        //     break;
+        // }
+        // console.log(firstValue);
+        // // или
+        // let firstValue2 = Object.values(post)[0];
+        // console.log(firstValue2);
+        // // или
+        // let firstValue3 = post.author
+        // console.log(firstValue3);
+
+        // let secondValue;
+        // for (const key in post) {
+        //     for (const key2 in post[key]) {
+        //         for (const key3 in post[key][key2]) {
+        //             if (post[key][key2][key3] = 2) {
+        //                 secondValue = post[key][key2][key3];
+        //             }
+        //         }
+        //     }
+        // }
+        // console.log(secondValue);
+        // или
+        // let secondValue2;
+        // secondValue2 = Object.values(post.comments[0].rating)[1];
+        // console.log(secondValue2);
+        // // или (Почему не работает?)
+        // let secondValue3 = post.comments[0].rating[1];
+        // console.log(secondValue3);
+
+        // let thirdValue;
+        // for (const key in post) {
+        //     for (const key2 in post[key]) {
+        //         if (post[key][key2] = 5) {
+        //             thirdValue = post[key][key2];
+        //         }
+        //     }
+        // }
+        // console.log(thirdValue);
+        // или 
+        // let thirdValue2
+        // thirdValue2 = Object.values(post.comments)[1].userId;
+        // console.log(thirdValue2);
+
+        // или 
+        // let thirdValue3 = post.comments[1].userId;
+        // console.log(thirdValue3);
+
+        // let fourthValue;
+        // for (const key in post) {
+        //     for (const key2 in post[key]) {
+        //         if (post[key][key2] = "lorem ipsum 2") {
+        //             fourthValue = post[key][key2];
+        //         }
+        //     }
+        // }
+        // console.log(fourthValue);
+        // или 
+        // let fourthValue2 = Object.values(post.comments)[1].text;
+        // console.log(fourthValue2);
+
+        // или
+        // let fourthValue3 = post.comments[1].text;
+        // console.log(fourthValue3);
+
+        // Задание 3
+        // Дан массив products, необходимо цену каждого продукта уменьшить на 15 % используя метод forEach.
+
+        // const products = [
+        //     {
+        //         id: 3,
+        //         price: 200,
+        //     },
+        //     {
+        //         id: 4,
+        //         price: 900,
+        //     },
+        //     {
+        //         id: 1,
+        //         price: 1000,
+        //     },
+        // ];
+
+        // products.forEach(function (product, price, products) {
+        //     product.price = product.price * 0.85;
+        // });
+        // console.log(products);
+        // или
+        // products.forEach(product => {
+        //     product.price = product.price * 0.85;
+        // });
+        // console.log(products); 
+
+        // Задание 4
+        // 1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна фотография используя метод filter.Исходные данные - массив products.
+        // 2. Необходимо отсортировать массив products используя метод sort по цене, начиная с самой маленькой, заканчивая самой большой ценой, после чего вывести отсортированный массив в консоль.
+
+        const products = [
+            {
+                id: 3,
+                price: 127,
+                photos: [
+                    "1.jpg",
+                    "2.jpg",
+                ],
+            },
+            {
+                id: 5,
+                price: 499,
+                photos: [],
+            },
+            {
+                id: 10,
+                price: 26,
+                photos: [
+                    "3.jpg",
+                ],
+            },
+            {
+                id: 8,
+                price: 78,
+            },
+        ];
+
+        const productsWithPhotos = products.filter(product => product.photos && product.photos.length > 0)
+        console.log(productsWithPhotos);
+
+        products.sort((a, b) => a.price - b.price);
+        console.log(products);
+
+        // ** Задание 5 **
+        //     Дано 2 массива
+        //     Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
+
+        const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+        const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+        const weekDay = {};
+        for (let i = 0; i < en.length; i++) {
+            weekDay[en[i]] = ru[i];
+        }
+
+        console.log(weekDay);
+    </script>
+</body>
+
+</html>
